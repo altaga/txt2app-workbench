@@ -14,6 +14,9 @@ from fastapi.responses import FileResponse
 # My Modules
 from utils import preprocess, postprocess, emptyprompt
 
+result = check_output(["bash","installNodeModules.sh"]) # Install All Node_Modules
+print(result.decode()) # Print only for debug
+
 # API Setup
 app = FastAPI()
 app.add_middleware(

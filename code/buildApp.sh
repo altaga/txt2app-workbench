@@ -1,1 +1,1 @@
-cd /project/code/Txt2App && npm run lint && npm run deploy
+cd /project/code/Txt2App && chmod +x android/gradlew && npm run lint && npm run deploy
